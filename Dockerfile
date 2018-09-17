@@ -1,6 +1,8 @@
 ARG BASE_TAG
 FROM nvidia/cuda:${BASE_TAG}
 
+ENV LANG C.UTF-8
+
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
         software-properties-common \
