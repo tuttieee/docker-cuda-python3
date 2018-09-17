@@ -1,4 +1,5 @@
-FROM nvidia/cuda:9.0-cudnn7-runtime-ubuntu16.04
+ARG BASE_TAG
+FROM nvidia/cuda:${BASE_TAG}
 
 # Install necessary packages
 RUN apt-get update && apt-get install -y \
