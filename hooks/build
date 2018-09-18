@@ -1,5 +1,7 @@
 #!/bin/bash
-set -eu
+set -eux
+
+env
 
 if [ "$DOCKERFILE_PATH" = "" ]; then
     DOCKERFILE_PATH_ARG=""
